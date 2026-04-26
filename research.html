@@ -21,7 +21,7 @@
       <a href="publications.html">Publications</a>
       <a href="achievements.html">Achievements</a>
       <a href="contact.html">Contact</a>
-      <a href="https://drive.google.com/file/d/1IpTft2DPSW-dWEpnaCWMyX1pVLky7I1S/view?usp=sharing" target="_blank" rel="noopener">CV</a>
+      <a href="https://drive.google.com/file/d/1hcHYTGEd77-WvCicf0sSVaeIFpPVZHSH/view?usp=sharing" target="_blank" rel="noopener">CV</a>
     </nav>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -34,16 +34,39 @@
   <p class="muted">My work builds systems that make LLMs useful for expert-driven scientific tasks — with a focus on reliability, explainability, and tight integration with domain knowledge.</p>
 
   <section class="project">
-    <h2>Language Models for Advancing Materials Science <span class="status-badge"> · Present work</span></h2>
+    <h2>Preference Learning from Physics-Based Feedback for Materials Design <span class="status-badge"> · Present work</span></h2>
     <p>
-      I develop post-training and prompting pipelines that integrate generative LMs with domain-specific,
-      physics-based evaluation to support inverse alloy design and high-throughput materials discovery.
-      A key challenge is ensuring that model outputs are grounded: I combine information extraction from
-      scientific literature with expert feedback loops to iteratively improve reliability and reduce hallucination
-      in materials-property predictions.
+      I develop post-training pipelines that use physics-based simulation outcomes as reward signals
+      to tune LLMs toward reliable inverse alloy design. Rather than relying on human preference labels,
+      the system closes the feedback loop with domain-specific evaluators — ensuring generated
+      alloy compositions are physically plausible and satisfy microstructure constraints.
+      This approach was presented as a <strong>Spotlight paper</strong> at the
+      <a href="https://openreview.net/forum?id=pHGZ9WNZAK" target="_blank" rel="noopener">NeurIPS 2025 AI4Mat Workshop</a>.
     </p>
     <p>
-      This work is supported by the <strong>Allen Institute for AI (AI2) OMAI program</strong>.
+      This work is supported by the <strong>AI2 Open Model Initiative (OMAI)</strong> grant (PI: Noah Smith, Co-PI: Samuel Carton).
+    </p>
+  </section>
+
+  <section class="project">
+    <h2>Scientific Information Extraction from Materials Literature <span class="status-badge"> · Present work</span></h2>
+    <p>
+      I study how reliably LLMs can extract structured knowledge (e.g., material properties, experimental
+      conditions) from scientific text. Working with two real-world materials datasets, I benchmarked
+      extraction accuracy under distribution shift and noisy annotations, and developed calibration
+      methods that improve reliability without requiring full retraining.
+      Published in <a href="https://aclanthology.org/2024.findings-acl.897/" target="_blank" rel="noopener">Findings of ACL 2024</a>.
+    </p>
+  </section>
+
+  <section class="project">
+    <h2>Sample-Efficient Sentiment Analysis on Social Media <span class="status-badge"> · Concluded · 2025</span></h2>
+    <p>
+      Developed a sample-efficient NLP approach to analyze Twitter opinion on US aid to Ukraine,
+      demonstrating that high-quality sentiment classifiers can be built with substantially reduced
+      annotation budgets. The work contributes methods applicable to low-resource opinion mining in
+      rapidly evolving policy and social contexts.
+      Published at <a href="https://hdl.handle.net/10125/109494" target="_blank" rel="noopener">HICSS 2025</a>.
     </p>
   </section>
 
@@ -53,8 +76,8 @@
       In collaboration with physicians at the Stephenson Cancer Research Center, I built an automated NLP
       pipeline that maps patient clinical notes to eligibility criteria for early-phase oncology trials.
       The system used explainable AI components to flag the specific evidence driving each match decision,
-      giving clinicians a transparent and auditable recruitment tool. Results were published in
-      <em>PLOS ONE</em> (2024).
+      giving clinicians a transparent and auditable recruitment tool. Published in
+      <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0311510" target="_blank" rel="noopener"><em>PLOS ONE</em> (2024)</a>.
     </p>
   </section>
 
@@ -63,7 +86,9 @@
     <p>
       I studied how users formulate search requests as conversational speech acts, and built classifiers
       that map dialogue turns to structured search actions.
-      This work produced two publications (ACM/IEEE JCDL 2023 — Best Paper Nominee; ACM CHIIR 2021)
+      This work produced two publications —
+      <a href="https://dl.acm.org/doi/abs/10.1109/JCDL57899.2023.00027" target="_blank" rel="noopener">ACM/IEEE JCDL 2023 (Best Paper Nominee, top 3)</a>
+      and <a href="https://dl.acm.org/doi/abs/10.1145/3406522.3446057" target="_blank" rel="noopener">ACM CHIIR 2021</a> —
       and contributed frameworks for grounding task-oriented dialogue in information retrieval.
     </p>
   </section>

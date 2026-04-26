@@ -89,7 +89,8 @@ a:hover{text-decoration: underline}
 .page h1{margin-top:0}
 .page .muted{color: var(--muted)}
 
-.pub-list{line-height:1.6}
+.pub-list{line-height:1.6; padding-left: 1.4rem}
+.pub-list li{margin-bottom: .9rem}
 .pub-list .venue{color: var(--muted)}
 
 .bullet-tight li{margin: .4rem 0}
